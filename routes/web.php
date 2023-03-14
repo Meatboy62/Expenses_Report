@@ -32,6 +32,12 @@ Route::post('/expense_reports/{id}/sendMail',[ExpenseReportController::class, 's
 Route::get('/expense_reports/{expense_report}/expenses/create',[ExpenseController::class, 'create']);
 
 Route::post('/expense_reports/{expense_report}/expenses',[ExpenseController::class, 'store']);
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::prefix('/company') ->group(function(){
+    Route::get('/us', [HomeController::class, 'us']);
+    Route::get('/form', [HomeController::class, 'form']);
+});
+
+Auth::routes();

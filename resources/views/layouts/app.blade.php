@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="/css/style.css">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -30,7 +30,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                        <li><a href="/expense_reports">Expense Reports</a></li>
+                        <li><a href="/expense_reports">Expense Reports</a></li> 
+                        <li></li>                      
+                        <li><a href="/company/form">Form</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

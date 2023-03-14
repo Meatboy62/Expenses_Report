@@ -25,4 +25,12 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function us(){
+        return view('us.nosotros');
+    }
+
+    public function form(){
+        return view('us.forma');
+    }
 }
